@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista della Spesa Condivisa</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Lista della Spesa Condivisa</h1>
+  </header>
+  
+    <section id="nuovo-articolo">
+        <form id="formArticolo">
+        <input type="text" id="articolo" placeholder="Inserisci un articolo..." required>
+        <input type="number" id="quantita" placeholder="Quantità" required min="1">
+        <button type="submit">Aggiungi</button>
+        </form>
+    </section>
+
+    <section id="lista-articoli">
+        <ul id="articoli"></ul>
+    </section>
+  
+  
+  <script src="script.js"></script>
+</body>
+</html>
