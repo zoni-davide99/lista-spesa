@@ -6,25 +6,30 @@
   <title>Lista della Spesa Condivisa</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Includi Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-firestore.js"></script>
 </head>
 <body>
   <header>
     <h1>Lista della Spesa Condivisa</h1>
   </header>
   
-    <section id="nuovo-articolo">
-        <form id="formArticolo">
-        <input type="text" id="articolo" placeholder="Inserisci un articolo..." required>
-        <input type="number" id="quantita" placeholder="Quantità" required min="1">
-        <button type="submit">Aggiungi</button>
-        </form>
-    </section>
+  <section id="nuovo-articolo">
+      <form id="formArticolo">
+      <input type="text" id="articolo" placeholder="Inserisci un articolo..." required>
+      <input type="number" id="quantita" placeholder="Quantità" required min="1">
+      <button type="submit">Aggiungi</button>
+      </form>
+  </section>
 
-    <section id="lista-articoli">
-        <ul id="articoli"></ul>
-    </section>
-  
-  
+  <section id="lista-articoli">
+      <ul id="articoli"></ul>
+  </section>
+
+  <!-- Includi il file di configurazione Firebase e il tuo script -->
+  <script src="firebase-config.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
